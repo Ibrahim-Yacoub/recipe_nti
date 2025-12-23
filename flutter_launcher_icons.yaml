@@ -1,0 +1,42 @@
+# flutter_launcher_icons configuration for app icon generation
+
+flutter_launcher_icons:
+  # The image parameter sets the app icon
+  image_path: "assets/images/icon.png"
+
+  # Generate icons for Android
+  android: true
+
+  # Generate icons for iOS
+  ios: true
+
+  # Optionally, you can specify different icons for Android and iOS
+  # android_path: "assets/images/icon_android.png"
+  # ios_path: "assets/images/icon_ios.png"
+
+  # Adaptive icon for Android (API 26+)
+  # This creates adaptive icons with separate foreground and background layers
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/icon.png"
+
+  # Remove alpha channel for iOS icons (required for iOS)
+  remove_alpha_ios: true
+
+  # Web icon (optional)
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+
+  # Windows icon (optional)
+  windows:
+    generate: true
+    image_path: "assets/images/icon.png"
+    icon_size: 48
+
+  # macOS icon (optional)
+  macos:
+    generate: true
+    image_path: "assets/images/icon.png"
+

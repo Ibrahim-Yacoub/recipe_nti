@@ -1,0 +1,52 @@
+# flutter_native_splash configuration for Android 12+ native splash screen
+
+flutter_native_splash:
+  # The image parameter sets the splash screen image.
+  # Use the logo.png from assets/images directory
+  image: assets/images/logo.png
+
+  # The color parameter sets the background color of the splash screen
+  # You can customize this color to match your app's theme
+  color: "#FFFFFF"
+
+  # The image_dark parameter and color_dark are optional and are used for dark mode
+  # Uncomment these lines if you want different splash screen for dark mode
+  # image_dark: assets/images/logo.png
+  # color_dark: "#000000"
+
+  # Android 12+ specific configuration
+  android_12:
+    # The image parameter sets center image for the splash screen
+    image: assets/images/logo.png
+
+    # Optional: Splash screen background color for Android 12+
+    color: "#FFFFFF"
+
+    # Optional: App icon background color for Android 12+
+    # The icon will be used from your android/app/src/main/res/mipmap folders
+    # icon_background_color: "#FFFFFF"
+
+    # Dark mode configuration for Android 12+ (optional)
+    # image_dark: assets/images/logo.png
+    # color_dark: "#000000"
+    # icon_background_color_dark: "#000000"
+
+  # Android-specific configuration
+  android: true
+
+  # Set to false if you don't want splash screen for iOS
+  ios: false
+
+  # Set to false if you don't want splash screen for Web
+  web: false
+
+  # Platform-specific settings
+  android_gravity: center
+
+  # If you want to use fullscreen splash screen
+  fullscreen: true
+
+  # info_plist_files are used for iOS, not needed for Android-only setup
+  # info_plist_files:
+  #   - 'ios/Runner/Info.plist'
+
